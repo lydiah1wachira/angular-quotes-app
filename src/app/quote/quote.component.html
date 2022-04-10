@@ -7,8 +7,16 @@
     <p>
       <button (click)="toggleQuoteDetails(i)">Details</button>
     </p>
-    
-    <app-quote-detail *ngIf="quote.showQuoteDetails" [quote]="quote" (isToDelete) = 'deleteQuotes($event,i)'></app-quote-detail>
+    <div>
+      <app-quote-detail *ngIf="quote.showQuoteDetails" [quote]="quote" (isToDelete) = 'deleteQuotes($event,i)'></app-quote-detail>
+    </div>
+
+   
+   
+  </div>
+  
+  <div>
+    <app-quote-form></app-quote-form>
   </div>
   
 </div>

@@ -2,22 +2,26 @@
   <h2 class="text-center">Add a new Quote</h2>
   <hr>
   <form>
+    <div class="form-group">
+      <label for="quoteText">Quote:</label>
+      <textarea class="form-control" id="quoteText" rows="3"></textarea>
+    </div>
       <div class="form-group">
 
-          <label for="quoteText">Quote:</label>
-          <input type="text" required class="form-control" id="quoteText">
+          <label for="author"> Quote Author:</label>
+          <input class="form-control" id="author" type="text">            
 
       </div>
       <div class="form-group">
-
-          <label for="author">Author:</label>
-          <input class="form-control" id="author" rows="4">            
+          <label for="submittedBy">Submited By:</label>
+          <input type='text' class="form-control" id="submittedBy">
 
       </div>
+
       <div class="form-group">
-          <label for="submittedBy">Completion</label>
-          <input type='date' id="submittedBy">
+        <label for="datePosted">Date:</label>
+        <input type='date' id="datePoated" >
 
-      </div>
+    </div>
   </form>
 </div>
