@@ -1,7 +1,19 @@
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 <p>{{ quote.author }}</p>
 <p>{{ quote.submittedBy }}</p>
 <p>{{ quote.datePosted }}</p>
-<p>{{ quote.upvote }}</p>
-<p>{{ quote.downvote }}</p>
+
+<div class="upvote">
+  <button (click)='upvote()'><i class='bx bxs-upvote bx-tada bx-rotate-90' ></i> {{ quote.upvote }}</button>
+</div>
+
+<div class="downvote">
+  <button (click)='downvote()'><i class='bx bx-downvote bx-tada bx-rotate-90' ></i> {{ quote.downvote }}</button>
+  
+</div>
+
+
+
 
 <button (click) = 'quoteDelete(true)' class="btn btn-outline-danger">Delete </button>
