@@ -3,6 +3,7 @@
 <p>{{ quote.author }}</p>
 <p>{{ quote.submittedBy }}</p>
 <p>{{ quote.datePosted | date }}</p>
+<p>posted {{ quote.datePosted|dateCount }} days ago </p>
 
 <div class="upvote">
   <button (click)='upvote()'><i class='bx bxs-upvote bx-tada bx-rotate-90' ></i> {{ quote.upvote }}</button>
