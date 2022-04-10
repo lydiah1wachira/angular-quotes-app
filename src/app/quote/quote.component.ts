@@ -19,6 +19,13 @@ export class QuoteComponent implements OnInit {
   
   ];
 
+  addNewQuote(quote: any){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.datePosted = new Date(quote.datePosted)
+    this.quotes.push(quote)
+  }
+
   toggleQuoteDetails (index:any) {
     this.quotes[index].showQuoteDetails = ! this.quotes[index].showQuoteDetails;
   }
