@@ -1,4 +1,4 @@
-<div >
+<div class="container-fluid" >
   <h1>Quotes</h1>
   <hr>
   <div *ngFor="let quote of quotes; let i = index">
@@ -10,7 +10,5 @@
     
     <app-quote-detail *ngIf="quote.showQuoteDetails" [quote]="quote" (isToDelete) = 'deleteQuotes($event,i)'></app-quote-detail>
   </div>
-  
-   
   
 </div>
