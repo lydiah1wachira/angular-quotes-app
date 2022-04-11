@@ -1,27 +1,33 @@
 # Quotes
 
+![quotes app](src/assets/Screenshot%20from%202022-04-11%2013-34-38.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+## By
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Lydiah Wachira
 
-## Code scaffolding
+## Description
+This is a web Application for Quotes, it contains some existing quotes aand their details, such as the author, the name of the person who sumbitted the quote, and the date, submitted. There are upvotes and downvotes button and a user can add a new quote or delete an existing one.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Known Bugs
+The add quote form does not clear, upon submission.
+In case of any other bugs, email me for support.
 
-## Build
+## setup/Installation Requirements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. install angular using the command : $ npm install -g @angular/cli@11.2.6
+2. confirm installation using the command: $ ng
+3. fork and then clone this repository into an empty folder.
+4. open on editor of your choice.
+5. for view only use this live link:
 
-## Running unit tests
+## technologies used 
+HTML
+CSS
+TYPESCRIPT
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
