@@ -1,12 +1,12 @@
 <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-<p>{{ quote.author }}</p>
-<p>{{ quote.submittedBy }}</p>
-<p>{{ quote.datePosted | date }}</p>
+<p>Author:{{ quote.author }}</p>
+<p> Submitted by: {{ quote.submittedBy }}</p>
+<p>Posted on: {{ quote.datePosted | date }}</p>
 <p>posted {{ quote.datePosted|dateCount }} days ago </p>
 
 <div class="upvote">
-  <button (click)='upvote()'><i class='bx bxs-upvote bx-tada bx-rotate-90' ></i> {{ quote.upvote }}</button>
+  <button (click)='upvote()'><i class='bx bxs-upvote bx-tada bx-rotate-90'  ></i> {{ quote.upvote }}</button>
 </div>
 
 <div class="downvote">

@@ -24,6 +24,7 @@ export class QuoteDetailComponent implements OnInit {
     this.quote.downvote+=1;
   }
 
+  
   constructor() { }
 
   ngOnInit(): void {
