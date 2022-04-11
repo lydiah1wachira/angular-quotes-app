@@ -1,20 +1,53 @@
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-<p>Author:{{ quote.author }}</p>
-<p> Submitted by: {{ quote.submittedBy }}</p>
-<p>Posted on: {{ quote.datePosted | date }}</p>
-<p>posted {{ quote.datePosted|dateCount }} days ago </p>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+/>
 
-<div class="upvote">
-  <button (click)='upvote()'><i class='bx bxs-upvote bx-tada bx-rotate-90'  ></i> {{ quote.upvote }}</button>
+<div class="container-fluid">
+  <div class="row">
+    <div class="card-column">
+      <p>
+        <small
+          >Author: <strong>{{ quote.author }}</strong></small
+        >
+      </p>
+      <p>
+        <small
+          >Submitted by: <strong>{{ quote.submittedBy }}</strong></small
+        >
+      </p>
+      <p>
+        <small
+          >Posted on:
+          <strong>{{ quote.datePosted | date | uppercase }}</strong></small
+        >
+      </p>
+      <p>
+        <small
+          >posted: <strong>{{ quote.datePosted | dateCount }}</strong> days
+          ago</small
+        >
+      </p>
+
+      <div class="upvote-downvote-btn">
+        <div class="upvote">
+          <button  class="btn-dark" (click)="upvote()">
+            <i class="bx bxs-upvote bx-tada bx-rotate-90"></i>
+            {{ quote.upvote }}
+          </button>
+        </div>
+        <div class="downvote">
+          <button class="btn-dark" (click)="downvote()">
+            <i class="bx bx-downvote bx-tada bx-rotate-90"></i>
+            {{ quote.downvote }}
+          </button>
+        </div>
+      </div>
+      <div class="delete-btn">
+        <button (click)="quoteDelete(true)" class="btn btn-danger">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="downvote">
-  <button (click)='downvote()'><i class='bx bx-downvote bx-tada bx-rotate-90' ></i> {{ quote.downvote }}</button>
-  
-</div>
-
-
-
-
-<button (click) = 'quoteDelete(true)' class="btn btn-outline-danger">Delete </button>

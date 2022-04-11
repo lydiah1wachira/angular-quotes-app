@@ -19,9 +19,9 @@ export class QuoteComponent implements OnInit {
   
   ];
 
-  preNum!:number
-  lastNum!:number
-  counter!:number
+  preNumber!:number
+  lastNumber!:number
+  counterNumber!:number
 
   addNewQuote(quote: any){
     let quoteLength = this.quotes.length;
@@ -46,14 +46,14 @@ export class QuoteComponent implements OnInit {
   }
 
   highestUpvote(){
-    this.preNum = 0
-    this.lastNum = 0
+    this.preNumber = 0
+    this.lastNumber = 0
 
-    for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
-      this.lastNum = this.quotes[this.counter].upvote;
-      if(this.lastNum > this.preNum){this.preNum = this.lastNum}
+    for(this.counterNumber=0 ; this.counterNumber < this.quotes.length; this.counterNumber++) {
+      this.lastNumber = this.quotes[this.counterNumber].upvote;
+      if(this.lastNumber > this.preNumber){this.preNumber = this.lastNumber}
     }
-    return  this.preNum
+    return  this.preNumber
   }
 
   constructor() { }

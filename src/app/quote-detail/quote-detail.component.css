@@ -1,0 +1,18 @@
+.upvote{
+  display:inline;
+  padding:5px;
+
+  margin: 0 auto;
+}
+
+.downvote{
+  display:inline;
+  padding:5px;
+  margin: 0 auto;
+}
+
+
+
+.delete-btn{
+  padding-top: 10px;
+}

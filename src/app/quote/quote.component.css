@@ -1,0 +1,28 @@
+#quotes-page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('src/assets/bgimageoption3.webp');
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+
+
+  
+}
+
+
+#quotes{
+  padding-top: 3%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+
+.card-text{
+  font-weight: 400;
+  font-size: large;
+}
+
+#details-btn{
+  font-size:13px;
+}
+
