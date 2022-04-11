@@ -1,2 +1,12 @@
+.text-center{
+  color: white;
+}
 
+.form-group{
+  color:white;
+  padding: 8px;
+}
 
+#quotes-form{
+  background-color: rgba(41, 110, 32, 0.5);
+}

@@ -21,13 +21,20 @@
   </div>
 </nav>
 
-<div class="d-flex p-2" id="quotes-page">
+<div class="container-fluid" id="quotes-page">
   <h1 id="quotes">Quotes</h1>
-
   <div class="row">
-   
-      <div class="card-column">
-        <div class="card" *ngFor="let quote of quotes; let i = index">
+    
+    <div class="col-md-5">
+      <div>
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+    </div> 
+    
+
+    <div class="col-md-7">
+      <div class="card-grid">
+        <div class="card-block" *ngFor="let quote of quotes; let i = index">
           <div class="card-body">
             <h5 class="card-title">Quote: {{ quote.id }}</h5>
             <p
@@ -56,9 +63,8 @@
 
       </div>
     
-    <div>
-      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
-    </div>
+   
+  </div>
 
 </div>

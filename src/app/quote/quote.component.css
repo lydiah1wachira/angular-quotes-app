@@ -1,12 +1,13 @@
-#quotes-page {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('src/assets/bgimageoption3.webp');
-  /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
+ #quotes-page{
+   background-size:cover;
+   background-repeat:no-repeat;
+   background-image: url('src/assets/pexels-photobg.webp');
+ }
 
-
-  
+#quotes{
+  color:white;
+  text-align: center;
+  text-decoration: underline;
 }
 
 
@@ -15,7 +16,11 @@
   padding-bottom: 2%;
   text-align: center;
 }
-
+.card-block{
+  background-color: rgba(185, 233, 179, 0.9);
+  display: flex;
+  margin: 10px;
+}
 
 .card-text{
   font-weight: 400;
