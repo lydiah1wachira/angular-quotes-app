@@ -28,6 +28,8 @@ HTML
 CSS
 TYPESCRIPT
 
+## Support and Contact Information
 
+Email me at: lydiahcedric@gmail.com
 
 
